@@ -1,0 +1,29 @@
+create a bank platform like Bank of America where we can handle transaction between users in diffrents banks.
+
+Funtional requirements
+it must store information of users and send money between them or another users from others banks, also allowing suporting for many transactions all the day and taking care of users' sensitive data
+
+Restrictions = transations between differents banks
+Development team = ? 
+Quality attributes = availability, Security, elasticity, performance, usability
+Arquitecture Patterns = Distributed architecture (Microservices, Event)
+Stack thecnological.  
+
+	backend
+	Java 
+	Spring boot 
+	Kafta
+	AWS Web Service for deployment (EKS, S3,RDS,MSK,ECS)
+	Docker
+	Kubernetes
+	JUnit
+	Mockito
+	Okta
+	Postgres
+
+	Frontend 
+	React Js. 
+
+Hey guys this is not a spam message  it's just a invitation to my personal project where the idea is to create a bank platform like Bank of America where we can handle transaction between users in different banks.   this is the link to join and we're going to use the latest technologies today. 
+		
+	

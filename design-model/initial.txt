@@ -1,0 +1,12 @@
+users
+c_type_account (catalogue)
+accounts
+products
+user_products
+transactions
+c_type_transactions
+users_transactions
+other_banks_users
+other_banks_transactions
+
+
