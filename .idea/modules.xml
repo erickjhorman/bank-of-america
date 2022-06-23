@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bank-of-america/bank-of-america/bank-of-america.iml" filepath="$PROJECT_DIR$/bank-of-america/bank-of-america/bank-of-america.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank-of-america/bank-of-america/users/users.iml" filepath="$PROJECT_DIR$/bank-of-america/bank-of-america/users/users.iml" />
     </modules>
   </component>
 </project>

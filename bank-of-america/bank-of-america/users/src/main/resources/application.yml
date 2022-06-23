@@ -8,6 +8,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/bank_of_america
     password: 'password'
 
+
   jpa:
     hibernate:
       ddl-auto: update
