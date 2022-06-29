@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - postgres-bank
+      - postgres
     restart: unless-stopped
 
   pgadmin:
@@ -26,11 +26,11 @@ services:
     ports:
       - "5050:80"
     networks:
-      - postgres-bank
+      - postgres
     restart: unless-stopped
 
 networks:
-  postgres-bank:
+  postgres:
     driver: bridge
 
 volumes:
