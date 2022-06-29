@@ -33,6 +33,7 @@ networks:
   postgres:
     driver: bridge
 
+
 volumes:
   postgres-bank:
   pgadmin-bank:
