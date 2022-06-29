@@ -5,13 +5,13 @@ services:
     environment:
       POSTGRES_USER: bank_of_america
       POSTGRES_PASSWORD: password
-      PGDATA: /data/postgres
+      PGDATA: /data/postgres-bank
     volumes:
-      - postgres:/data/postgres
+      - postgres-bank:/data/postgres-bank
     ports:
       - "5432:5432"
     networks:
-      - postgres-bank
+      - postgres
     restart: unless-stopped
 
   pgadmin:
@@ -22,11 +22,11 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
-      - pgadmin:/var/lib/pgadmin
+      - pgadmin-bank:/var/lib/pgadmin-bank
     ports:
       - "5050:80"
     networks:
-      - postgres-bank
+      - postgres
     restart: unless-stopped
 
 networks:
@@ -34,5 +34,5 @@ networks:
     driver: bridge
 
 volumes:
-  postgres:
-  pgadmin:
+  postgres-bank:
+  pgadmin-bank:
