@@ -3,7 +3,7 @@ services:
     container_name: postgres-bank-america
     image: postgres
     environment:
-      POSTGRES_USER: bankofamerica
+      POSTGRES_USER: bank_of_america
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
     volumes:
