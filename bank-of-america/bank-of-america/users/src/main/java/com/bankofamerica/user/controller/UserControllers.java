@@ -3,9 +3,7 @@ package com.bankofamerica.user.controller;
 import com.bankofamerica.user.model.User;
 import com.bankofamerica.user.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,6 +22,20 @@ public class UserControllers {
         return USER_SERVICES.getUsers();
     }
 
+    @PostMapping
+    public void registerNewUser(@RequestBody User user){
+        USER_SERVICES.addNewUser(user);
+    }
+
+    @DeleteMapping(path = "{userId}")
+    public void deleteUser(@PathVariable("userId") int userId){
+        USER_SERVICES.deleteUserAccount(userId);
+    }
+
+    @PostMapping(path = "{userId}/changename")
+    public void updateUser(){
+
+    }
 
 
 }

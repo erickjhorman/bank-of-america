@@ -6,7 +6,7 @@ spring:
   datasource:
     username: 'bank_of_america'
     url: jdbc:postgresql://localhost:5432/bank_of_america
-    password: 'password'
+    password: password
 
 
   jpa:
